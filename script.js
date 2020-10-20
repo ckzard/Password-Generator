@@ -46,6 +46,7 @@ function generatePassword() {
   var passwordNumeric = confirm("Include numeric characters?");
   var passwordSpecial = confirm("Include special characters?");
 
+  //Ensures atleast one option is selected
   while (!passwordLower && !passwordUpper && !passwordNumeric && !passwordSpecial) {
     alert("One option must be selected")
     var passwordLower = confirm("Include lower case characters?");
